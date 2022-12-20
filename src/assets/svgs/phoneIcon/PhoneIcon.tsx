@@ -2,7 +2,7 @@ type Props = {
   color?: string;
 };
 
-const GitHubIcon: React.FC<Props> = ({ color = "#FFF" }) => {
+const GitHubIcon: React.FC<Props> = ({ color = "#8892b0" }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

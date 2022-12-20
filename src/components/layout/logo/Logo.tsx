@@ -12,7 +12,7 @@ const Logo = () => {
       </svg>
       <div className={`${styles.hexagon} ${styles['gradient-border']}`}>
         <div className={styles["hexagon-inner"]}>
-          <span className={styles.text}>M</span>
+          <span className={styles.text}>W</span>
         </div>
       </div>
     </div>

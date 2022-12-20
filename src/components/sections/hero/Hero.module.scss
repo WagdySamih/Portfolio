@@ -1,0 +1,32 @@
+.container {
+  max-width: calc(var(--max-width) - 400px);
+  margin: auto;
+  flex-direction: column;
+  margin: 5rem auto;
+  padding: 2rem;
+  .hi {
+    color: var(--green);
+    margin: 2rem 0;
+    font-size: 1.5rem;
+  }
+
+  .name {
+    font-size: clamp(40px, 8vw, 80px);
+    margin: 2rem 0;
+    color: var(--lightest-slate);
+    line-height: 1.1;
+  }
+
+  .intro {
+    font-size: clamp(40px, 8vw, 80px);
+    margin: 2rem 0;
+    color: var(--slate);
+    font-weight: 600;
+  }
+  
+  .text {
+    margin: 20px 0px 0px;
+    color: var(--slate);
+    max-width: 540px;
+  }
+}

@@ -1,0 +1,31 @@
+.title {
+  padding: 2rem 0;
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+
+  &::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--green);
+    margin-right: -50%;
+  }
+
+  &::before {
+    content: "0" counter(section) ".";
+    position: relative;
+    bottom: 4px;
+    counter-increment: section 1;
+    margin-right: 10px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-weight: 400;
+  }
+}

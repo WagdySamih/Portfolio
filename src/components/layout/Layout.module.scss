@@ -7,7 +7,7 @@
 }
 
 .container {
-  max-width: 1400px;
+  max-width: var(--max-width);
   min-height: 100vh;
   margin: auto;
   line-height: 1.3;
@@ -20,7 +20,7 @@
 
 .bottom-links {
   width: 100%;
-  max-width: 1400px;
+  max-width: var(--max-width);
   display: flex;
   justify-content: space-between;
   position: absolute;

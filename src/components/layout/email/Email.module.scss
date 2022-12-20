@@ -3,11 +3,13 @@
   flex-direction: column;
   padding-top: 1rem;
 }
+
 .email {
-  padding: 0rem 2rem 1rem 2rem;
+  padding: 0rem 2rem 1rem 1.8rem;
   writing-mode: vertical-rl;
   text-decoration: none;
   cursor: pointer;
+  font-size: 0.75rem;
 
   &:hover {
     color: var(--green) !important;
@@ -16,7 +18,7 @@
 }
 
 .vertical {
-  border-left: 2px solid #fff;
-  padding: 4rem 2px;
-  margin: 0 2.6rem;
+  border-left: 2px solid var(--slate);
+  padding: 4rem 0px;
+  margin: 0 2.5rem;
 }
