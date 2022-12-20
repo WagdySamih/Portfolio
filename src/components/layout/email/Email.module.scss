@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+.email {
+  padding: 0rem 2rem 1rem 2rem;
+  writing-mode: vertical-rl;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--green) !important;
+    transform: translateY(-2px);
+  }
+}
+
+.vertical {
+  border-left: 2px solid #fff;
+  padding: 4rem 2px;
+  margin: 0 2.6rem;
+}
