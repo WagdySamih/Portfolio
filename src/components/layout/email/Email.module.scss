@@ -10,6 +10,7 @@
   text-decoration: none;
   cursor: pointer;
   font-size: 0.75rem;
+  transition: var(--transition);
 
   &:hover {
     color: var(--green) !important;
