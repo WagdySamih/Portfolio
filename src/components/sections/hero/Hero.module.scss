@@ -1,9 +1,10 @@
 .container {
   max-width: calc(var(--max-width) - 400px);
-  margin: auto;
   flex-direction: column;
-  margin: 2rem auto;
+  margin: 2rem auto 0 auto;
   padding: 2rem;
+  min-height: 100vh;
+  
   .hi {
     color: var(--green);
     margin: 2rem 0;
@@ -23,7 +24,7 @@
     color: var(--slate);
     font-weight: 600;
   }
-  
+
   .text {
     margin: 20px 0px 0px;
     color: var(--slate);

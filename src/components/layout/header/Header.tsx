@@ -11,16 +11,16 @@ const Header = () => {
       <div className={styles.nav}>
         <ul>
           <li>
-            <a href="About">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="Projects">Projects</a>
+            <a href="#work">Work</a>
           </li>
           <li>
-            <a href="Work">Work</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="About">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
         <button className={styles.download}>Resume</button>

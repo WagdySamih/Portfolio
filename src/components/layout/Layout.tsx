@@ -10,10 +10,10 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => {
       <div className={styles.container}>
         <Header />
         <main> {children}</main>
-        <div className={styles["bottom-links"]}>
-          <SocialLinks />
-          <Email />
-        </div>
+      </div>
+      <div className={styles["bottom-links"]}>
+        <SocialLinks />
+        <Email />
       </div>
     </div>
   );

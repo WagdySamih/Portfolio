@@ -1,11 +1,13 @@
 .title {
-  padding: 2rem 0;
   position: relative;
-  width: 100%;
-  white-space: nowrap;
+  display: flex;
   -webkit-box-align: center;
   align-items: center;
-  display: flex;
+  white-space: nowrap;
+  color: var(--white);
+  font-size: clamp(26px, 5vw, var(--fz-heading));
+  width: 100%;
+  padding: 2rem 0;
 
   &::after {
     content: "";
@@ -21,7 +23,6 @@
   &::before {
     content: "0" counter(section) ".";
     position: relative;
-    bottom: 4px;
     counter-increment: section 1;
     margin-right: 10px;
     color: var(--green);
