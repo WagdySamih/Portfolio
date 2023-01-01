@@ -6,17 +6,17 @@ const SocialLinks = () => {
     <div className={styles.container}>
       <ul>
         <li>
-          <a href="https://github.com/MohamedMagdi0">
+          <a href="https://github.com/WagdySamih" target={"_blank"} rel="noreferrer">
             <GitHubIcon />
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/mohamed-magdi-00">
+          <a href="https://www.linkedin.com/in/wagdy-samih/" target={"_blank"} rel="noreferrer">
             <LinkedInIcon />
           </a>
         </li>
         <li>
-          <a href="tel:+201207677851">
+          <a href="tel:+201029844735">
             <PhoneIcon />
           </a>
         </li>
