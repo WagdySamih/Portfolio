@@ -14,10 +14,6 @@
   width: 33px;
   position: relative;
   z-index: 1;
-  &:hover {
-    background: var(--green-tint);
-  }
-
 }
 
 .hexagon-inner:before,
@@ -50,6 +46,9 @@
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  &:hover {
+    background: var(--green-tint);
+  }
 }
 .text {
   color: var(--green);
