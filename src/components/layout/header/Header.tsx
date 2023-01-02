@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "../../UI";
 import { Logo } from "../logo";
 import styles from "./Header.module.scss";
 
@@ -23,7 +24,7 @@ const Header = () => {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-        <button className={styles.download}>Resume</button>
+        <Button text="Resume" />
       </div>
     </header>
   );
