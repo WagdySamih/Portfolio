@@ -1,5 +1,38 @@
 .container {
-  max-width: calc(var(--max-width) - 400px);
+  max-width: calc(var(--max-width) - 600px);
   margin: auto;
   flex-direction: column;
+  min-height: 100vh;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: var(--fz-xl);
+    padding: 1rem 0;
+  }
+
+  .techs {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      list-style: none;
+      position: relative;
+      padding-inline-start: 0.75rem;
+      width: 50%;
+      &:before {
+        content: "▹";
+        position: absolute;
+        left: 0px;
+        bottom: 8px;
+        color: var(--green);
+        font-size: var(--fz-sm);
+        line-height: 12px;
+      }
+    }
+  }
 }
