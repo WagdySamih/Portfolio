@@ -4,7 +4,7 @@
   margin: 2rem auto 0 auto;
   padding: 2rem;
   min-height: 100vh;
-  
+
   .hi {
     color: var(--green);
     margin: 2rem 0;
@@ -13,14 +13,12 @@
 
   .name {
     font-size: clamp(40px, 8vw, 80px);
-    margin: 2rem 0;
     color: var(--lightest-slate);
-    line-height: 1.1;
+    letter-spacing: 2px;
   }
 
   .intro {
     font-size: clamp(40px, 8vw, 80px);
-    margin: 2rem 0;
     color: var(--slate);
     font-weight: 600;
   }
@@ -28,6 +26,10 @@
   .text {
     margin: 20px 0px 0px;
     color: var(--slate);
-    max-width: 540px;
+    max-width: 600px;
+    a {
+      color: var(--green);
+      cursor: pointer;
+    }
   }
 }
