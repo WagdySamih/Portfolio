@@ -1,0 +1,14 @@
+.container {
+  max-width: calc(var(--max-width) - 600px);
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - var(--footer-height));
+}
+
+.contactBtn {
+  margin-inline-start: 0;
+  margin: 1rem 0;
+  max-width: 300px;
+}

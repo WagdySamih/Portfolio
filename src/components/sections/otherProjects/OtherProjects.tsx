@@ -1,7 +1,8 @@
 import { ExternalLink, FolderIcon, GitHubIcon } from "../../../assets";
 import styles from "./OtherProjects.module.scss";
 import { Projects } from "./config";
-const OtherProjects = () => {
+
+const OtherProjects: React.FC = () => {
   return (
     <div className={styles.container}>
       {Projects.map((project) => (

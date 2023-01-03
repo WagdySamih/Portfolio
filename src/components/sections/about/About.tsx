@@ -3,11 +3,10 @@ import styles from "./About.module.scss";
 
 const About: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <div id="about" className={styles.container}>
       <PageTitle title="About Me" />
       <div className={styles.content}>
         <div>
-          {" "}
           <p>Hello, My name is Wagdy Samih</p>
           <p>I am a software developer with almost three years of experience</p>
           <p>
@@ -29,7 +28,10 @@ const About: React.FC = () => {
             <li>Node</li>
           </ul>
         </div>
-        <ProfileImage imagePath="/images/me.jpg" alt="Wagdy Samih Profile Image" />
+        <ProfileImage
+          imagePath="/images/me.jpg"
+          alt="Wagdy Samih Profile Image"
+        />
       </div>
     </div>
   );
