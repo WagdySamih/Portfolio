@@ -11,13 +11,13 @@
   line-height: 1.3;
   position: relative;
 
-  p {
+  p > {
     line-height: 1.5rem;
   }
 }
 
 .bottom-links {
-  position:fixed;
+  position: fixed;
   bottom: 0;
   display: flex;
   justify-content: space-between;
