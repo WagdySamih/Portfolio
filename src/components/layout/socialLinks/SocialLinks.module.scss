@@ -10,15 +10,20 @@
     padding: 1rem 2rem;
     display: inline-block;
   }
-  svg {
-    transition: var(--transition);
 
-    &:hover {
+  li a:hover {
+    svg {
       transform: translateY(-2px);
-      path {
-        fill: var(--green);
+      path,
+      rect,
+      circle {
+        stroke: var(--green);
       }
     }
+  }
+
+  svg {
+    transition: var(--transition);
   }
 }
 

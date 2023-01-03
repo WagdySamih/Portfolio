@@ -1,5 +1,5 @@
 export * from "./gitHubIcon";
 export * from "./linkedInIcon";
-export * from "./phoneIcon";
+export * from "./facebookIcon";
 export * from "./externalLink";
 export * from "./folderIcon";
