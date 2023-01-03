@@ -2,55 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.hexagon-inner,
-.hexagon {
-  background: var(--green);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 58px;
-  width: 33px;
-  position: relative;
-  z-index: 1;
-}
-
-.hexagon-inner:before,
-.hexagon-inner:after,
-.hexagon:before,
-.hexagon:after {
-  background: inherit;
-  content: "";
-  height: inherit;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: inherit;
-  z-index: -1;
-}
-.hexagon-inner:before,
-.hexagon:before {
-  transform: rotate(-60deg);
-}
-.hexagon-inner:after,
-.hexagon:after {
-  transform: rotate(60deg);
-}
-
-.hexagon-inner {
-  background:  var(--navy);
-  height: 54px;
-  width: 31px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-  &:hover {
-    background: var(--green-tint);
-  }
-}
-.text {
   color: var(--green);
-  font-size: 2rem;
+
+  svg {
+    fill: none;
+  }
+  &:hover {
+    svg {
+      fill: var(--green-tint);
+    }
+  }
 }

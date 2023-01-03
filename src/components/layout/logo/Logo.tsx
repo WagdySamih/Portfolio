@@ -1,21 +1,64 @@
+import styles from "./Logo.module.scss";
+const color = "#64ffda";
 
-import styles from "./Logo.module.scss"
 const Logo = () => {
   return (
     <div className={styles.container}>
-      <svg width="0" height="0">
-        <defs>
-          <clipPath id="hexagon-clip" clipPathUnits="objectBoundingBox">
-            <path d="M0.5 0, 1 0.25, 1 0.75, 0.5 1, 0 0.75, 0, 0.25z" />
-          </clipPath>
-        </defs>
+      <svg
+        id="logo"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        width={50}
+        height={50}
+        viewBox="0 0 84 96"
+      >
+        <title>Logo</title>
+        <g transform="translate(-8.000000, -2.000000)">
+          <g transform="translate(11.000000, 5.000000)">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              width="60"
+              height="60"
+              x="9"
+              y="15"
+              viewBox="0 0 64 64"
+            >
+              <g>
+                <path
+                  d="m35.598 33.452c.37-.281.786-.487 1.222-.655l-.327-.422c-.554-.718-1.298-1.273-2.152-1.604l-.01-.003h-.001c-.625-.177-1.216-.295-1.805-.36-.007 0-.012-.005-.019-.006-.023 0-.045.009-.069.006-1.255-.132-2.533-.028-3.8.307-1.134.302-2.228.801-3.25 1.482-.778.532-1.476 1.155-2.067 1.848-.449.521-.845 1.074-1.178 1.647l-2.143 3.712v10.906c.047.589.242 1.515.896 2.366.67.88 1.542 1.312 2.26 1.539l7.06-12.227c.008-.015.016-.029.025-.043l4.056-7.025c.333-.571.77-1.064 1.3-1.468z"
+                  fill={color}
+                  data-original={color}
+                ></path>
+                <path
+                  d="m20.102 53.283c-.803-1.044-1.042-2.173-1.101-2.936v-36.047c-.001-2.657-2.2-4.819-4.901-4.819h-.2c-2.702 0-4.9 2.162-4.9 4.819v25.86c-.103 1.902.025 6.639 3.418 10.131 1.936 1.995 4.262 2.854 5.255 3.221 1.145.426 2.34.718 3.571.874-.402-.285-.794-.646-1.142-1.103z"
+                  fill={color}
+                  data-original={color}
+                ></path>
+                <path
+                  d="m44.002 50.271v-8.198l-6.539-8.446c-.493.154-.906.351-1.26.62-.425.323-.774.719-1.041 1.174l-3.898 6.752 9.372 12.114c.69-.189 1.714-.622 2.465-1.61.657-.854.852-1.779.9-2.406z"
+                  fill={color}
+                  data-original={color}
+                ></path>
+                <path
+                  d="m55 14.3c0-2.657-2.198-4.819-4.9-4.819h-.199c-2.702 0-4.9 2.162-4.9 4.819v36.01c-.061.801-.299 1.93-1.104 2.976-.35.46-.746.822-1.149 1.106 1.224-.155 2.421-.449 3.578-.88.905-.33 3.018-1.101 4.893-2.857.082-.074.154-.149.229-.226l.142-.144c3.389-3.488 3.516-8.224 3.413-10.098v-25.887z"
+                  fill={color}
+                  data-original={color}
+                ></path>
+              </g>
+            </svg>
+            <polygon
+              id="Shape"
+              stroke={color}
+              stroke-width="5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              points="39 0 0 22 0 67 39 90 78 68 78 23"
+            ></polygon>
+          </g>
+        </g>
       </svg>
-      <div className={`${styles.hexagon} ${styles['gradient-border']}`}>
-        <div className={styles["hexagon-inner"]}>
-          <span className={styles.text}>W</span>
-        </div>
-      </div>
     </div>
-  )
-}
-export default Logo
+  );
+};
+export default Logo;
