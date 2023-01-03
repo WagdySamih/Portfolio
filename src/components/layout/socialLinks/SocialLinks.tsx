@@ -1,7 +1,7 @@
-import { GitHubIcon, LinkedInIcon, FacebookIcon } from "../../../assets";
+import { GitHubIcon, LinkedInIcon, FacebookIcon } from "@assets";
 import styles from "./SocialLinks.module.scss";
 
-const SocialLinks = () => {
+const SocialLinks: React.FC = () => {
   return (
     <div className={styles.container}>
       <ul>

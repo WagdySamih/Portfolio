@@ -1,10 +1,8 @@
 import { PropsWithChildren } from "react";
-import { Email } from "./email";
-import { Header } from "./header";
-import { SocialLinks } from "./socialLinks";
+import { Email, Header, SocialLinks, Footer } from "..";
 
 import styles from "./Layout.module.scss";
-import { Footer } from "./footer";
+
 const Layout: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className={styles.layout}>

@@ -1,11 +1,12 @@
-import { ExternalLink, FolderIcon, GitHubIcon } from "../../../assets";
+import { ExternalLink, FolderIcon, GitHubIcon } from "@assets";
+import { projects } from "./config";
+
 import styles from "./OtherProjects.module.scss";
-import { Projects } from "./config";
 
 const OtherProjects: React.FC = () => {
   return (
     <div className={styles.container}>
-      {Projects.map((project) => (
+      {projects.map((project) => (
         <ProjectCard key={project.title} {...project} />
       ))}
     </div>

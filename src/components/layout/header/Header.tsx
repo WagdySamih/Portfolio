@@ -1,9 +1,7 @@
-import React from "react";
-import { Button } from "../../UI";
-import { Logo } from "../logo";
+import { Button, Logo } from "@components";
 import styles from "./Header.module.scss";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className={styles.container}>
       <div>

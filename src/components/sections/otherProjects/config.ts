@@ -1,6 +1,6 @@
 import { Project } from "./model";
 
-export const Projects: Project[] = [
+export const projects: Project[] = [
   {
     title: "Chat Application",
     description:

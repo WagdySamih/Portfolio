@@ -1,4 +1,4 @@
-import { PageTitle, ProfileImage } from "../../UI";
+import { PageTitle, ProfileImage } from "@components";
 import styles from "./About.module.scss";
 
 const About: React.FC = () => {

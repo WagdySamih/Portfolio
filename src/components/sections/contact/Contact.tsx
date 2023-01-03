@@ -1,4 +1,4 @@
-import { Button, PageTitle, ProfileImage } from "../../UI";
+import { Button, PageTitle } from "@components";
 import styles from "./Contact.module.scss";
 
 const Contact: React.FC = () => {
