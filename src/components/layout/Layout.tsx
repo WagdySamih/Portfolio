@@ -4,12 +4,14 @@ import { Header } from "./header";
 import { SocialLinks } from "./socialLinks";
 
 import styles from "./Layout.module.scss";
+import { Footer } from "./footer";
 const Layout: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className={styles.layout}>
       <div className={styles.container}>
         <Header />
         <main> {children}</main>
+        <Footer />
       </div>
       <div className={styles["bottom-links"]}>
         <SocialLinks />
