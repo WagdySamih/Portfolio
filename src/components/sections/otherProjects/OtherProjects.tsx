@@ -1,14 +1,29 @@
 import { ExternalLink, FolderIcon, GitHubIcon } from "@assets";
+import { Button } from "components/UI";
+import { useState } from "react";
 import { projects } from "./config";
 
 import styles from "./OtherProjects.module.scss";
 
 const OtherProjects: React.FC = () => {
+  const [list, setList] = useState(projects.slice(0, 6));
+  const onClickHandler = () => {
+    const newList =
+      list.length === 6 ? [...projects] : [...projects.slice(0, 6)];
+    setList(newList);
+  };
   return (
     <section className={styles.container}>
-      {projects.map((project) => (
-        <ProjectCard key={project.title} {...project} />
-      ))}
+      <div>
+        {list.map((project) => (
+          <ProjectCard key={project.title} {...project} />
+        ))}
+      </div>
+      <Button
+        text={`${list.length === 6 ? "Read More" : "Read Less"}`}
+        className={styles.btn}
+        onClick={onClickHandler}
+      />
     </section>
   );
 };
