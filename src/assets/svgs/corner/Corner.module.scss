@@ -1,0 +1,22 @@
+// .container {
+//   &:hover {
+//     .gradient1 {
+//       stop-color: red !important;
+//     }
+//   }
+// }
+
+
+.gradient1 {
+  stop-color: var(--grad-1);
+  transition: all 0.3s ease-in-out;
+}
+
+.hover .gradient2 {
+  stop-color: var(--grad-1);
+}
+
+.gradient2 {
+  stop-color: var(--grad-2);
+  transition: all 0.3s ease-in-out;
+}

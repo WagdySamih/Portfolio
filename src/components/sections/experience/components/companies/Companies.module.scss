@@ -1,0 +1,84 @@
+.container {
+  .title {
+    font-size: var(--fz-heading);
+    padding-bottom: 1rem;
+    font-family: var(--font-mono);
+    transform: translateX(-15px);
+  }
+  .curve {
+    position: relative;
+    &::before {
+      content: " ";
+      width: 90px;
+      height: 90px;
+      background: linear-gradient(
+        135deg,
+        var(--grad-1) 0%,
+        var(--grad-2) 50%,
+        var(--grad-1) 100%
+      );
+      opacity: 1;
+      border-top-left-radius: 8px;
+      transition: all 0.3s ease-in-out;
+      position: absolute;
+      top: -5px;
+      bottom: 0;
+      left: -5px;
+    }
+
+    &::after {
+      content: " ";
+      width: 90px;
+      height: 90px;
+      background: linear-gradient(
+        135deg,
+        var(--grad-2) 0%,
+        var(--grad-1) 50%,
+        var(--grad-2) 100%
+      );
+      opacity: 0;
+      border-top-left-radius: 8px;
+      transition: all 0.3s ease-in-out;
+      position: absolute;
+      top: -5px;
+      bottom: 0;
+      left: -5px;
+    }
+
+    ul {
+      background-color: var(--navy);
+      position: relative;
+      padding: 1rem;
+      z-index: 1;
+      list-style: none;
+      li {
+        padding: 0.3rem 0;
+        margin: 0.4rem 0;
+        transition: var(--transition);
+        width: fit-content;
+        cursor: pointer;
+        &:hover {
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+
+.gradientUnderline {
+  position: relative;
+
+  &::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(270deg, var(--grad-2) 0%, var(--grad-1) 100%);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+  }
+}

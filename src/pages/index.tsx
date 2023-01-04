@@ -1,6 +1,13 @@
 import Head from "next/head";
 
-import { Layout, Hero, About, OtherProjects, Contact } from "@components";
+import {
+  Layout,
+  Hero,
+  About,
+  OtherProjects,
+  Contact,
+  Experience,
+} from "@components";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -13,12 +20,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className={styles.main}>
-          <Hero />
-          <About />
-          <OtherProjects />
-          <Contact />
-        </div>
+        <Hero />
+        <About />
+        <Experience />
+        <OtherProjects />
+        <Contact />
       </Layout>
     </>
   );
