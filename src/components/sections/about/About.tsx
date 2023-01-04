@@ -3,7 +3,7 @@ import styles from "./About.module.scss";
 
 const About: React.FC = () => {
   return (
-    <div id="about" className={styles.container}>
+    <section id="about" className={styles.container}>
       <PageTitle title="About Me" />
       <div className={styles.content}>
         <div>
@@ -33,7 +33,7 @@ const About: React.FC = () => {
           alt="Wagdy Samih Profile Image"
         />
       </div>
-    </div>
+    </section>
   );
 };
 export default About;

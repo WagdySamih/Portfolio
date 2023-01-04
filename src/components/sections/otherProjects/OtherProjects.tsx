@@ -5,11 +5,11 @@ import styles from "./OtherProjects.module.scss";
 
 const OtherProjects: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       {projects.map((project) => (
         <ProjectCard key={project.title} {...project} />
       ))}
-    </div>
+    </section>
   );
 };
 
