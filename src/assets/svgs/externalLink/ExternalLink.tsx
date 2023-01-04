@@ -12,9 +12,9 @@ const ExternalLink: React.FC<Props> = ({ color = "#8892b0" }) => {
       height="24"
       fill="none"
       stroke={color}
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       // class="feather feather-external-link"
     >
       <title>External Link</title>
