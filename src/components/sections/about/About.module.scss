@@ -1,7 +1,9 @@
 .container {
   max-width: calc(var(--max-width) - 600px);
   margin: auto;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
 
   .content {
@@ -9,6 +11,7 @@
     justify-content: space-between;
     align-self: center;
     align-items: center;
+    width: 100%;
   }
 
   h2 {
