@@ -14,7 +14,7 @@
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  
+
   .btn {
     display: flex;
     justify-content: center;
@@ -58,6 +58,8 @@
       color: var(--white);
       color: var(--lightest-slate);
       font-size: var(--fz-xxl);
+      margin: 0;
+      margin-bottom: 0.5rem;
     }
   }
   p {

@@ -54,7 +54,7 @@
       list-style: none;
       position: relative;
       padding-inline-start: 0.75rem;
-      // width: 50%;
+
       &:before {
         content: "▹";
         position: absolute;
@@ -71,6 +71,7 @@
     list-style: none;
     align-items: flex-end;
     padding-inline-start: 1rem;
+    flex-wrap: wrap;
 
     li {
       font-family: var(--font-mono);
