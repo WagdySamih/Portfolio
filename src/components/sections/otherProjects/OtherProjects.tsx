@@ -1,5 +1,5 @@
 import { ExternalLink, FolderIcon, GitHubIcon } from "@assets";
-import { Button } from "components/UI";
+import { Button, Section } from "components/UI";
 import { useState } from "react";
 import { projects } from "./config";
 
@@ -13,7 +13,7 @@ const OtherProjects: React.FC = () => {
     setList(newList);
   };
   return (
-    <section className={styles.container}>
+    <Section className={styles.container}>
       <h2 className={styles.title}>Other Projects</h2>
       <div>
         {list.map((project) => (
@@ -25,7 +25,7 @@ const OtherProjects: React.FC = () => {
         className={styles.btn}
         onClick={onClickHandler}
       />
-    </section>
+    </Section>
   );
 };
 

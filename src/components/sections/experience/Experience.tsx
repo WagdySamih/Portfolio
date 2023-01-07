@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { PageTitle } from "@components";
+import { PageTitle, Section } from "@components";
 import { Companies, Description, Overlay } from "./components";
 import { workExperience } from "./config";
 
@@ -10,7 +10,7 @@ const Experience = () => {
   const [selectedCompany, setSelectedCompany] = useState(1);
 
   return (
-    <section id="work" className={styles.container}>
+    <Section id="work" className={styles.container}>
       <PageTitle title="Work Experience" />
 
       <div className={styles.wrapper}>
@@ -23,7 +23,7 @@ const Experience = () => {
           />
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

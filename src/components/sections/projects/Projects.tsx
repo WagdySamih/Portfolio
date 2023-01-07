@@ -1,16 +1,16 @@
-import { PageTitle } from "components/UI";
+import { PageTitle, Section } from "components/UI";
 import styles from "./Projects.module.scss";
 import { projects } from "./config";
 import { Project } from "./model";
 
 const Projects = () => {
   return (
-    <section id="projects" className={styles.container}>
+    <Section id="projects" className={styles.container}>
       <PageTitle title="Featured Projects" />
       {projects.map((project) => (
         <Project key={project.name} {...project} />
       ))}
-    </section>
+    </Section>
   );
 };
 

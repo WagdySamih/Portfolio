@@ -1,9 +1,9 @@
-import { Button, PageTitle } from "@components";
+import { Button, PageTitle, Section } from "@components";
 import styles from "./Contact.module.scss";
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className={styles.container}>
+    <Section id="contact" className={styles.container}>
       <PageTitle title="What's next!" />
       <p>
         Well, I&lsquo;m not currently looking for a job.
@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
         You can text me anytime about anything you may ever need!
       </p>
       <Button text="Say Hello!" className={styles.contactBtn} />
-    </section>
+    </Section>
   );
 };
 export default Contact;
