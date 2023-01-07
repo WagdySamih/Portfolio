@@ -66,21 +66,21 @@
       }
     }
   }
-  .techs {
-    display: flex;
-    list-style: none;
-    align-items: flex-end;
-    padding-inline-start: 1rem;
-    flex-wrap: wrap;
+  // .techs {
+  //   display: flex;
+  //   list-style: none;
+  //   align-items: flex-end;
+  //   padding-inline-start: 1rem;
+  //   flex-wrap: wrap;
 
-    li {
-      font-family: var(--font-mono);
-      font-size: var(--fz-xs);
-      line-height: 1.75;
+  //   li {
+  //     font-family: var(--font-mono);
+  //     font-size: var(--fz-xs);
+  //     line-height: 1.75;
 
-      &:not(:last-of-type) {
-        margin-inline-end: 0.5rem;
-      }
-    }
-  }
+  //     &:not(:last-of-type) {
+  //       margin-inline-end: 0.5rem;
+  //     }
+  //   }
+  // }
 }

@@ -68,21 +68,8 @@
   footer {
     padding-top: 1rem;
     margin-top: auto;
-    ul {
-      display: flex;
-      list-style: none;
-      align-items: flex-end;
-      flex-wrap: wrap;
-
-      li {
-        font-family: var(--font-mono);
-        font-size: var(--fz-xxs);
-        line-height: 1.75;
-
-        &:not(:last-of-type) {
-          margin-inline-end: 0.5rem;
-        }
-      }
+    .techs {
+      padding-inline-start: 0;
     }
   }
 }

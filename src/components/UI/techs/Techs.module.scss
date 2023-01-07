@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding-inline-start: 1rem;
+  list-style: none;
+
+  li {
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+    line-height: 1.75;
+
+    &:not(:last-of-type) {
+      margin-inline-end: 0.5rem;
+    }
+  }
+}

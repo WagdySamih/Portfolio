@@ -1,4 +1,5 @@
 import { Calendar, Pin } from "@assets";
+import { Techs } from "components";
 import { WorkExperience } from "../../models";
 import styles from "./Description.module.scss";
 
@@ -27,12 +28,7 @@ const Description: React.FC<WorkExperience> = ({
           <li key={d}>{d}</li>
         ))}
       </ul>
-      <ul className={styles.techs}>
-        {/* Techs:{" "} */}
-        {techs.map((d) => (
-          <li key={d}>{d}</li>
-        ))}
-      </ul>
+      <Techs techs={techs} />
     </div>
   );
 };

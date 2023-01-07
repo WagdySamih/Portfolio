@@ -1,4 +1,4 @@
-import { PageTitle, Section } from "components/UI";
+import { PageTitle, Section, Techs } from "components/UI";
 import styles from "./Projects.module.scss";
 import { projects } from "./config";
 import { Project } from "./model";
@@ -35,14 +35,7 @@ const Project: React.FC<Project> = ({
           <li key={r}>{r}</li>
         ))}
       </ul>
-      <ul className={styles.techs}>
-        {techs.map((t, index) => (
-          <li key={t}>
-            {t}
-            {index == techs.length - 1 ? "." : ","}
-          </li>
-        ))}
-      </ul>
+      <Techs techs={techs} />
     </div>
   );
 };

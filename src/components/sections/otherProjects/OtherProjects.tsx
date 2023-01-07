@@ -1,5 +1,5 @@
 import { ExternalLink, FolderIcon, GitHubIcon } from "@assets";
-import { Button, Section } from "components/UI";
+import { Button, Section, Techs } from "components/UI";
 import { useState } from "react";
 import { projects } from "./config";
 
@@ -70,11 +70,7 @@ const ProjectCard: React.FC<Props> = ({
         <p>{description}</p>
       </main>
       <footer>
-        <ul>
-          {techs.map((tech) => (
-            <li key={tech}>{tech}</li>
-          ))}
-        </ul>
+        <Techs className={styles.techs} techs={techs} />
       </footer>
     </div>
   );
