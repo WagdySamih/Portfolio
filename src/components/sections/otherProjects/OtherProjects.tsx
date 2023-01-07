@@ -14,6 +14,7 @@ const OtherProjects: React.FC = () => {
   };
   return (
     <section className={styles.container}>
+      <h2 className={styles.title}>Other Projects</h2>
       <div>
         {list.map((project) => (
           <ProjectCard key={project.title} {...project} />

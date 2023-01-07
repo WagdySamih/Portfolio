@@ -2,11 +2,19 @@
   max-width: calc(var(--max-width) - 600px);
   margin: auto;
   height: 100%;
+
+  .title {
+    color: var(--green);
+    font-size: var(--fz-heading);
+    margin: 2rem 0 1rem 0;
+  }
+
   > div {
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  
   .btn {
     display: flex;
     justify-content: center;
