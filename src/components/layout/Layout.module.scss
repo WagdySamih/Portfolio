@@ -1,8 +1,14 @@
+@use "styles/media" as mediaQuery;
+
 .layout {
   background-color: var(--navy);
   min-height: 100vh;
   position: relative;
   padding: 0 2rem;
+
+  @include mediaQuery.breakpoint("desktop-sm") {
+    padding: 0 1rem;
+  }
 }
 
 .container {

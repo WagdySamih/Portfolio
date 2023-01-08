@@ -1,3 +1,5 @@
+@use "styles/media" as mediaQuery;
+
 .container {
   display: flex;
   flex-direction: row;
@@ -24,6 +26,11 @@
       position: relative;
       cursor: pointer;
 
+      @include mediaQuery.breakpoint("desktop-sm") {
+        margin: 0 1.5rem;
+        padding: 1rem 0;
+      }
+
       &::after {
         content: counter(list) ".";
         position: absolute;
@@ -47,6 +54,15 @@
 
     border-radius: 4px;
     margin-inline-start: 2rem;
+
+    @include mediaQuery.breakpoint("desktop-sm") {
+      margin-inline-start: 1rem;
+      margin-inline-end: 0.25rem;
+    }
+
+    @include mediaQuery.breakpoint("tablet-lg") {
+      margin: 0rem;
+    }
 
     a {
       display: block;
