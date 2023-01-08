@@ -4,9 +4,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1rem;
   align-items: center;
   align-self: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(10, 25, 47, 0.85);
+  transition: var(--transition);
 
   .nav {
     display: flex;
@@ -72,4 +80,14 @@
   button:hover {
     background-color: var(--green-tint) !important;
   }
+}
+
+.scrollDown .container {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scrollUp .container {
+  transform: none;
+  box-shadow: 0 0 10px var(--navy-shadow);
+  backdrop-filter: blur(10px)
 }
