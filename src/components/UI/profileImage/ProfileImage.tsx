@@ -11,7 +11,7 @@ type Props = {
 const ProfileImage: React.FC<Props> = ({ imagePath, alt }) => {
   return (
     <picture className={`${styles.container}`}>
-      <Image src={imagePath} alt={alt} width={300} height={300} />
+      <Image src={imagePath} alt={alt}  fill/>
     </picture>
   );
 };
