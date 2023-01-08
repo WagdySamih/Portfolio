@@ -1,9 +1,15 @@
+@use "styles/media" as mediaQuery;
+
 .container {
   position: relative;
   z-index: 1;
   max-width: 300px;
   width: 100%;
   aspect-ratio: 1/1;
+
+  // @include mediaQuery.breakpoint("tablet-lg") {
+  //   margin: 0rem;
+  // }
 
   &:after {
     content: "";

@@ -1,3 +1,5 @@
+@use "styles/media" as mediaQuery;
+
 .container {
   position: fixed;
   bottom: 0;
@@ -5,6 +7,14 @@
 
   display: flex;
   flex-direction: column;
+
+  @include mediaQuery.breakpoint("desktop-sm") {
+    left: -15px;
+  }
+
+  @include mediaQuery.breakpoint("tablet-lg") {
+    display: none;
+  }
 
   ul {
     display: flex;

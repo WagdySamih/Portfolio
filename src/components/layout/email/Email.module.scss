@@ -1,7 +1,17 @@
+@use "styles/media" as mediaQuery;
+
 .container {
   position: fixed;
   bottom: 0;
   right: 0;
+
+  @include mediaQuery.breakpoint("desktop-sm") {
+    right: -20px;
+  }
+
+  @include mediaQuery.breakpoint("tablet-lg") {
+    display: none;
+  }
 }
 
 .email {

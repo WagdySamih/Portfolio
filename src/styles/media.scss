@@ -1,0 +1,43 @@
+@mixin breakpoint($value) {
+  @if $value == "phone-sm" {
+    @media only screen and (max-width: 349px) {
+      @content;
+    }
+  } @else if $value == "phone-md" {
+    @media only screen and (max-width: 450px) {
+      @content;
+    }
+  } @else if $value == "phone-lg" {
+    @media only screen and (max-width: 550px) {
+      @content;
+    }
+  } @else if $value == "tablet" {
+    @media only screen and (max-width: 750px) {
+      @content;
+    }
+  } @else if $value == "tablet-lg" {
+    @media only screen and (max-width: 900px) {
+      @content;
+    }
+  } @else if $value == "desktop-sm" {
+    @media only screen and (max-width: 1025px) {
+      @content;
+    }
+  } @else if $value == "desktop-md" {
+    @media only screen and (max-width: 1100px) {
+      @content;
+    }
+  } @else if $value == "desktop-lg" {
+    @media only screen and (max-width: 1260px) {
+      @content;
+    }
+  } @else if $value == "desktop-xl" {
+    @media only screen and (max-width: 1440px) {
+      @content;
+    }
+  } @else {
+    @media only screen and (max-width: $value) {
+      @content;
+    }
+  }
+}

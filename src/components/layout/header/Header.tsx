@@ -22,7 +22,7 @@ const Header: React.FC = () => {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-        <Button text="Resume" />
+        <Button className={styles.download} text="Resume" />
       </div>
     </header>
   );

@@ -1,7 +1,17 @@
+@use "styles/media" as mediaQuery;
+
 .container {
   max-width: calc(var(--max-width) - 400px);
   flex-direction: column;
   margin: 2rem auto 0 auto;
   padding: 2rem 3rem;
   min-height: 100vh;
+
+  @include mediaQuery.breakpoint("desktop-sm") {
+    padding: 2rem;
+  }
+
+  @include mediaQuery.breakpoint("tablet-lg") {
+    padding: 1rem;
+  }
 }
