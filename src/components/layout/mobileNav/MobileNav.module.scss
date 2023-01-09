@@ -1,0 +1,106 @@
+@use "styles/media" as mediaQuery;
+.container {
+  position: absolute;
+  inset: 0;
+  top: calc(0px - var(--nav-height));
+  z-index: 2;
+
+  @include mediaQuery.breakpoint("tablet") {
+    display: block;
+  }
+
+  ol {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding: 1rem 0;
+      list-style-type: none;
+      counter-increment: list;
+      position: relative;
+      cursor: pointer;
+      counter-increment: item 1;
+      font-size: clamp(var(--fz-sm), 4vw, var(--fz-lg));
+
+      &::before {
+        content: "0" counter(item) ".";
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+        color: var(--green);
+        font-size: var(--fz-sm);
+        font-family: var(--font-mono);
+      }
+      a {
+        font-family: var(--font-mono);
+        font-size: clamp(var(--fz-sm), 4vw, var(--fz-lg));
+        color: var(--lightest-slate);
+      }
+      a:hover {
+        color: var(--green);
+      }
+    }
+  }
+  .download {
+    background-color: var(--navy);
+    color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 4px;
+    height: 40px;
+    line-height: 1.2em !important;
+
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    margin-inline-start: 0;
+
+    &:hover {
+      background-color: var(--green-tint) !important;
+    }
+
+    a {
+      display: block;
+      transform: translateY(2px);
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: min(75vw, 400px);
+  height: 100vh;
+  background-color: var(--light-navy);
+  box-shadow: -10px 0px 30px -15px var(--navy-shadow);
+  overflow: hidden;
+
+  transform: translateX(100vw);
+  visibility: hidden;
+  transition: var(--transition);
+  z-index: 1;
+}
+
+.nav.isOpen {
+  transform: translateX(0vw);
+  visibility: visible;
+}
+
+.blur {
+  position: fixed;
+  section {
+    filter: blur(5px) brightness(0.7);
+    overflow: hidden;
+    max-height: 100vh;
+  }
+}

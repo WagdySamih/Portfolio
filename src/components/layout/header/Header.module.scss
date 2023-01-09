@@ -12,7 +12,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 2;
   background-color: rgba(10, 25, 47, 0.85);
   transition: var(--transition);
 
@@ -20,6 +20,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    @include mediaQuery.breakpoint("tablet") {
+      display: none;
+    }
   }
 
   ul {
@@ -71,14 +74,18 @@
     @include mediaQuery.breakpoint("tablet-lg") {
       margin: 0rem;
     }
+    @include mediaQuery.breakpoint("tablet") {
+      display: none;
+    }
+
+    &:hover {
+      background-color: var(--green-tint) !important;
+    }
 
     a {
       display: block;
       transform: translateY(2px);
     }
-  }
-  button:hover {
-    background-color: var(--green-tint) !important;
   }
 }
 
@@ -89,5 +96,12 @@
 .scrollUp .container {
   transform: none;
   box-shadow: 0 0 10px var(--navy-shadow);
-  backdrop-filter: blur(10px)
+  backdrop-filter: blur(10px);
+}
+
+.hamburger {
+  display: none;
+  @include mediaQuery.breakpoint("tablet") {
+    display: flex;
+  }
 }
