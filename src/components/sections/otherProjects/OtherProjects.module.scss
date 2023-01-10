@@ -24,6 +24,9 @@
     @include mediaQuery.breakpoint("desktop-sm") {
       grid-template-columns: 1fr 1fr;
     }
+    @include mediaQuery.breakpoint("phone-lg") {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
@@ -38,6 +41,13 @@
   box-shadow: 0 20px 30px -15px var(--navy-shadow);
   transition: var(--transition);
 
+  @include mediaQuery.breakpoint("tablet") {
+    padding: 1rem 0.75rem;
+  }
+
+  @include mediaQuery.breakpoint("phone-lg") {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+  }
   &:hover {
     transform: translateY(-5px);
     h2 {

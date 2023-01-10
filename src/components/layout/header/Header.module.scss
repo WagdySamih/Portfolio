@@ -16,6 +16,10 @@
   background-color: rgba(10, 25, 47, 0.85);
   transition: var(--transition);
 
+  @include mediaQuery.breakpoint("tablet") {
+    padding: 1rem;
+  }
+
   .nav {
     display: flex;
     flex-direction: row;

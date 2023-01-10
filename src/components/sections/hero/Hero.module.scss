@@ -1,9 +1,19 @@
+@use "styles/media" as mediaQuery;
+
 .container {
   max-width: calc(var(--max-width) - 400px);
   flex-direction: column;
   margin: 5rem auto 0 auto;
   padding: 2rem;
   min-height: 100vh;
+
+  @include mediaQuery.breakpoint("tablet") {
+    padding: 2rem 1rem;
+  }
+
+  @include mediaQuery.breakpoint("phone-lg") {
+    padding: 2rem 0;
+  }
 
   .hi {
     color: var(--green);

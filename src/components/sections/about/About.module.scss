@@ -21,6 +21,9 @@
 
     > div {
       min-width: 420px;
+      @include mediaQuery.breakpoint("tablet") {
+        min-width: unset;
+      }
     }
   }
 

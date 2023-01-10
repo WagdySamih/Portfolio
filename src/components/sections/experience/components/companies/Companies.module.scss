@@ -1,4 +1,9 @@
+@use "styles/media" as mediaQuery;
+
 .container {
+  @include mediaQuery.breakpoint("tablet") {
+    transform: translateX(1rem);
+  }
   .title {
     font-size: var(--fz-heading);
     padding-bottom: 1rem;
