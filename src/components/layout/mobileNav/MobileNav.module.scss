@@ -1,5 +1,6 @@
 @use "styles/media" as mediaQuery;
 .container {
+  display: none;
   position: absolute;
   inset: 0;
   top: calc(0px - var(--nav-height));
