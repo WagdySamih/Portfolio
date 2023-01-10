@@ -39,7 +39,14 @@ const MobileNav: React.FC<Props> = ({
               </li>
             ))}
           </ol>
-          <Button className={styles.download} text="Resume" />
+          <Button
+            className={styles.download}
+            text={
+              <a href="/Wagdy Samih CV.pdf" download>
+                Resume
+              </a>
+            }
+          />
         </nav>
       </aside>
     </div>

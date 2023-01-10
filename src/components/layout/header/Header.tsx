@@ -22,7 +22,14 @@ const Header: React.FC = () => {
             </li>
           ))}
         </ul>
-        <Button className={styles.download} text="Resume" />
+        <Button
+          className={styles.download}
+          text={
+            <a href="/Wagdy Samih CV.pdf" download>
+              Resume
+            </a>
+          }
+        />
       </div>
 
       <HamburgerMenuBtn

@@ -3,7 +3,7 @@ import styles from "./Button.module.scss";
 type Props = {
   onClick?: () => void;
   className?: string;
-  text: string;
+  text: React.ReactNode;
 };
 
 const Button: React.FC<Props> = ({ text, className, onClick }) => {
