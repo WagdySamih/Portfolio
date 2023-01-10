@@ -1,15 +1,20 @@
-import { Button, HamburgerMenuBtn } from "components/UI";
-import { useEffect, useState } from "react";
+import { useEffect, Dispatch, SetStateAction } from "react";
+import { Button } from "components/UI";
 import { navTabs } from "../header/config";
 
 import styles from "./MobileNav.module.scss";
 
 type Props = {
   isOpened: boolean;
+  setIsOpened: Dispatch<SetStateAction<boolean>>;
   listClassName?: string;
 };
 
-const MobileNav: React.FC<Props> = ({ isOpened, listClassName = "" }) => {
+const MobileNav: React.FC<Props> = ({
+  isOpened,
+  setIsOpened,
+  listClassName = "",
+}) => {
   useEffect(() => {
     if (!document || !window) return;
 
@@ -25,7 +30,12 @@ const MobileNav: React.FC<Props> = ({ isOpened, listClassName = "" }) => {
           <ol className={listClassName}>
             {navTabs.map((tab) => (
               <li key={tab}>
-                <a href={`#${tab.toLowerCase()}`}>{tab}</a>
+                <a
+                  href={`#${tab.toLowerCase()}`}
+                  onClick={() => setIsOpened(false)}
+                >
+                  {tab}
+                </a>
               </li>
             ))}
           </ol>

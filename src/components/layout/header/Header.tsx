@@ -30,7 +30,11 @@ const Header: React.FC = () => {
         setIsOpened={setIsOpened}
         isOpened={isOpened}
       />
-      <MobileNav listClassName={styles.mobNav} isOpened={isOpened} />
+      <MobileNav
+        listClassName={styles.mobNav}
+        isOpened={isOpened}
+        setIsOpened={setIsOpened}
+      />
     </header>
   );
 };
