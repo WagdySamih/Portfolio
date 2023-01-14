@@ -9,9 +9,12 @@ import {
   Experience,
   Projects,
 } from "@components";
-import styles from "../styles/Home.module.css";
+
+import { useEndPreloader } from "libs";
 
 export default function Home() {
+  useEndPreloader();
+
   return (
     <>
       <Head>
