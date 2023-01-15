@@ -1,37 +1,18 @@
-import { GitHubIcon, LinkedInIcon, FacebookIcon } from "@assets";
+import { socialLinks } from "./config";
+
 import styles from "./SocialLinks.module.scss";
 
 const SocialLinks: React.FC = () => {
   return (
     <div className={styles.container}>
       <ul>
-        <li>
-          <a
-            href="https://github.com/WagdySamih"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <GitHubIcon />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/wagdy-samih/"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <LinkedInIcon />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.facebook.com/profile.php?id=100006375610497"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <FacebookIcon />
-          </a>
-        </li>
+        {socialLinks.map(({ link, onClick, icon }) => (
+          <li key={link}>
+            <a href={link} target={"_blank"} rel="noreferrer">
+              {icon}
+            </a>
+          </li>
+        ))}
       </ul>
       <div className={styles.vertical} />
     </div>

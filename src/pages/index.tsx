@@ -9,11 +9,11 @@ import {
   Experience,
   Projects,
 } from "@components";
-
-import { useEndPreloader } from "libs";
+import { pageView as gaPageView, useEndPreloader } from "@libs";
 
 export default function Home() {
   useEndPreloader();
+  gaPageView();
 
   return (
     <>

@@ -1,5 +1,7 @@
 import { useEffect, Dispatch, SetStateAction } from "react";
-import { Button } from "components/UI";
+import { Button } from "@components";
+import { onCVDownload } from "@libs";
+
 import { navTabs } from "../header/config";
 
 import styles from "./MobileNav.module.scss";
@@ -42,7 +44,7 @@ const MobileNav: React.FC<Props> = ({
           <Button
             className={styles.download}
             text={
-              <a href="/Wagdy Samih CV.pdf" download>
+              <a onClick={onCVDownload} href="/Wagdy Samih CV.pdf" download>
                 Resume
               </a>
             }

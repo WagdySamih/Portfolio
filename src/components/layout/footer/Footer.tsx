@@ -1,4 +1,6 @@
 import { FacebookIcon, GitHubIcon, LinkedInIcon } from "@assets";
+import { onFacebookClick, onGithubClick, onLinkedinClick } from "@libs";
+
 import styles from "./Footer.module.scss";
 
 const Footer: React.FC = () => {
@@ -7,6 +9,7 @@ const Footer: React.FC = () => {
       <ul className={styles.social}>
         <li>
           <a
+            onClick={onGithubClick}
             href="https://github.com/WagdySamih"
             target={"_blank"}
             rel="noreferrer"
@@ -16,6 +19,7 @@ const Footer: React.FC = () => {
         </li>
         <li>
           <a
+            onClick={onLinkedinClick}
             href="https://www.linkedin.com/in/wagdy-samih/"
             target={"_blank"}
             rel="noreferrer"
@@ -25,6 +29,7 @@ const Footer: React.FC = () => {
         </li>
         <li>
           <a
+            onClick={onFacebookClick}
             href="https://www.facebook.com/profile.php?id=100006375610497"
             target={"_blank"}
             rel="noreferrer"

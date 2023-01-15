@@ -5,7 +5,9 @@
       "@assets": ["assets/index"],
       "@pages/*": ["pages/*"],
       "@styles/*": ["styles/index"],
-      "@components": ["components/index"]
+      "@components": ["components/index"],
+      "@libs": ["libs/index"],
+      "@html": ["html/index"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],

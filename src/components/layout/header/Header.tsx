@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { Button, HamburgerMenuBtn, Logo, MobileNav } from "@components";
+import { onCVDownload } from "@libs";
+
 import { navTabs } from "./config";
 import { useHeaderAnimate } from "./hooks";
 
 import styles from "./Header.module.scss";
-import { useState } from "react";
 
 const Header: React.FC = () => {
   useHeaderAnimate();
@@ -25,7 +27,7 @@ const Header: React.FC = () => {
         <Button
           className={styles.download}
           text={
-            <a href="/Wagdy Samih CV.pdf" download>
+            <a onClick={onCVDownload} href="/Wagdy Samih CV.pdf" download>
               Resume
             </a>
           }

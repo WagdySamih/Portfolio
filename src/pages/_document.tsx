@@ -1,5 +1,8 @@
-import { preloader } from "html";
 import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
+
+import { preloader } from "@html";
+import { GA_SRC_LINK, googleAnalyticsInit } from "@libs";
 
 const preloaderStyles: React.CSSProperties = {
   position: "absolute",
@@ -10,7 +13,12 @@ const preloaderStyles: React.CSSProperties = {
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <Script strategy="lazyOnload" src={GA_SRC_LINK} />
+        <Script id="google-analytics" strategy="lazyOnload">
+          {googleAnalyticsInit()}
+        </Script>
+      </Head>
       <body style={{ overflow: "hidden", maxHeight: "100vh" }}>
         <div
           id="preloader"
