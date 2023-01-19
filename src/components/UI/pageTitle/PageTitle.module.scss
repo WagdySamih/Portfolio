@@ -1,3 +1,5 @@
+@use "styles/media" as mediaQuery;
+
 .title {
   position: relative;
   display: flex;
@@ -8,6 +10,7 @@
   font-size: clamp(26px, 5vw, var(--fz-heading));
   width: 100%;
   padding: 2rem 0;
+  overflow: hidden;
 
   &::after {
     content: "";
