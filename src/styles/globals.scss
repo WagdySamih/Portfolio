@@ -1,5 +1,5 @@
 @use "./media" as mediaQuery;
-@import "./fonts.css";
+@import "./fonts.scss";
 
 :root {
   --max-width: 1700px;
@@ -17,7 +17,8 @@
   --green-tint: rgba(100, 255, 218, 0.1);
   --pink: #f57dff;
   --blue: #57cbff;
-  --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+  --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono";
   --fz-xxs: 12px;
   --fz-xs: 13px;
@@ -35,6 +36,7 @@
   --tab-width: 120px;
   --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --preloader-end-time: 5s;
 
   --grad-1: #64ffda;
   --grad-2: #a8b2d1;
@@ -60,7 +62,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   counter-reset: section;
-  background: var(--navy); 
+  background: var(--navy);
 }
 
 a {
