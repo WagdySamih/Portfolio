@@ -66,7 +66,7 @@ const ProjectCard: React.FC<Props> = ({
             )}
           </div>
         </div>
-        <h2 className={styles.title}>{title}</h2>
+        <h3 className={styles.title}>{title}</h3>
       </header>
       <main>
         <p>{description}</p>
