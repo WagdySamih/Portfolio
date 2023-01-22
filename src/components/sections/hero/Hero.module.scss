@@ -1,4 +1,5 @@
 @use "styles/media" as mediaQuery;
+@import "styles/animation.scss";
 
 .container {
   max-width: calc(var(--max-width) - 400px);
@@ -34,11 +35,32 @@
   }
 
   .text {
-    margin: 20px 0px 0px;
+    margin: 10px 0px 0px;
     color: var(--slate);
     max-width: 600px;
     a {
       color: var(--green);
     }
+  }
+}
+
+// animation
+$offset: var(--preloader-end-time);
+.container {
+  > * {
+    @include fadeInDropDown(10px);
+  }
+
+  > div:first-of-type {
+    animation-delay: calc($offset + 0s);
+  }
+  h1 {
+    animation-delay: calc($offset + 0.1s);
+  }
+  > div:last-of-type {
+    animation-delay: calc($offset + 0.2s);
+  }
+  > p {
+    animation-delay: calc($offset + 0.3s);
   }
 }

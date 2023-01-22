@@ -1,0 +1,15 @@
+@mixin fadeInDropDown($distance) {
+  @keyframes fadeInDropDown {
+    from {
+      transform: translateY($distance);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  opacity: 0;
+  transform: translateY($distance);
+  animation: fadeInDropDown 0.25s ease-in-out forwards;
+}

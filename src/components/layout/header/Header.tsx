@@ -19,7 +19,7 @@ const Header: React.FC = () => {
       <div className={styles.nav}>
         <ul>
           {navTabs.map((tab) => (
-            <li key={tab}>
+            <li className={styles.item} key={tab}>
               <a href={`#${tab.toLowerCase()}`}>{tab}</a>
             </li>
           ))}

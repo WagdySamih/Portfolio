@@ -1,4 +1,5 @@
 @use "styles/media" as mediaQuery;
+@import "styles/animation.scss";
 
 .container {
   display: flex;
@@ -20,6 +21,11 @@
     padding: 1rem;
   }
 
+  svg {
+    @include fadeInDropDown(-20px);
+    // @include fadeInDropDown(10px);
+  }
+
   .nav {
     display: flex;
     flex-direction: row;
@@ -33,13 +39,15 @@
     display: flex;
     flex-direction: row;
 
-    li {
+    .item {
       margin: 0 2rem;
       padding: 1rem 0;
       list-style-type: none;
       counter-increment: list;
       position: relative;
       cursor: pointer;
+
+      @include fadeInDropDown(-20px);
 
       @include mediaQuery.breakpoint("desktop-sm") {
         margin: 0 1.5rem;
@@ -69,6 +77,9 @@
 
     border-radius: 4px;
     margin-inline-start: 2rem;
+
+    // animation start
+    @include fadeInDropDown(-20px);
 
     @include mediaQuery.breakpoint("desktop-sm") {
       margin-inline-start: 1rem;
@@ -103,4 +114,29 @@
   @include mediaQuery.breakpoint("tablet") {
     display: flex;
   }
+}
+
+/* Apply the animation to each list item one by one */
+$offset: var(--preloader-end-time);
+
+.container svg,
+.hamburger,
+.item:nth-child(1) {
+  animation-delay: $offset !important;
+}
+
+.item:nth-child(2) {
+  animation-delay: calc($offset + 0.1s) !important;
+}
+
+.item:nth-child(3) {
+  animation-delay: calc($offset + 0.2s) !important;
+}
+
+.item:nth-child(4) {
+  animation-delay: calc($offset + 0.3s) !important;
+}
+
+.download {
+  animation-delay: calc($offset + 0.4s) !important;
 }
