@@ -37,7 +37,11 @@
   --tab-width: 120px;
   --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  // These variable just for config and using in starting following animations
   --preloader-end-time: 4.6s;
+  --header-animation-end-time: 0.45s;
+  --hero-section-animation-delay: 5.05s;
+  --bottom-links-animation-delay: 5.2s;
 
   --grad-1: #64ffda;
   --grad-2: #a8b2d1;

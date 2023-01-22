@@ -1,9 +1,11 @@
 @use "styles/media" as mediaQuery;
+@import "styles/animation";
 
 .container {
   position: fixed;
   bottom: 0;
   right: 0;
+  @include fadeIn(email-fade, 0.2s, var(--bottom-links-animation-delay));
 
   @include mediaQuery.breakpoint("desktop-sm") {
     right: -20px;

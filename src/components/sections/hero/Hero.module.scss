@@ -45,7 +45,8 @@
 }
 
 // animation
-$offset: var(--preloader-end-time);
+$offset: var(--hero-section-animation-delay);
+
 .container {
   > * {
     @include fadeInDropDown(hero, 10px);

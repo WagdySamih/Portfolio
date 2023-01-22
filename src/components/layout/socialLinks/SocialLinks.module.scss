@@ -1,4 +1,5 @@
 @use "styles/media" as mediaQuery;
+@import "styles/animation";
 
 .container {
   position: fixed;
@@ -7,6 +8,7 @@
 
   display: flex;
   flex-direction: column;
+  @include fadeIn(links-fade, 0.2s, var(--bottom-links-animation-delay));
 
   @include mediaQuery.breakpoint("desktop-sm") {
     left: -15px;
