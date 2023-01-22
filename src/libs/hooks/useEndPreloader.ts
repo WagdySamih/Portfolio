@@ -9,7 +9,7 @@ import { useEffect } from "react";
 // time to draw the polygon and show the middle logo
 const END_ANIMATION_OFFSET = 4000;
 const REMOVE_PRELOADER_ANIMATION_OFFSET = END_ANIMATION_OFFSET + 500;
-const PRELOADER_REMOVE_OFFSET = END_ANIMATION_OFFSET + 500;
+const PRELOADER_REMOVE_OFFSET = END_ANIMATION_OFFSET + 100;
 
 const useEndPreloader = () => {
   useEffect(() => {

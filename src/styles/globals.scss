@@ -1,5 +1,6 @@
 @use "./media" as mediaQuery;
 @import "./fonts.scss";
+@import "./animation.scss";
 
 :root {
   --max-width: 1700px;
@@ -36,7 +37,7 @@
   --tab-width: 120px;
   --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  --preloader-end-time: 5s;
+  --preloader-end-time: 4.6s;
 
   --grad-1: #64ffda;
   --grad-2: #a8b2d1;
@@ -86,4 +87,31 @@ button {
 
 ::-webkit-scrollbar-track {
   background: var(--navy);
+}
+
+// Animations global styles
+body {
+  #projects,
+  #projects-cards {
+    > div > div,
+    h2,
+    h1 {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  }
+  section:not(:nth-of-type(1), :nth-of-type(4), :nth-of-type(5)) {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+.animate {
+  opacity: 0;
+  @include fadeInDropDown(section-animate, 100px, 0.5s, 0s);
+}
+
+.animate-card {
+  opacity: 0;
+  @include fadeInDropDown(cards-animate, 30px);
 }

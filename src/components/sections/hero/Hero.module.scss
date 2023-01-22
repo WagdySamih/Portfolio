@@ -48,7 +48,7 @@
 $offset: var(--preloader-end-time);
 .container {
   > * {
-    @include fadeInDropDown(10px);
+    @include fadeInDropDown(hero, 10px);
   }
 
   > div:first-of-type {

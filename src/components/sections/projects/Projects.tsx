@@ -2,14 +2,18 @@ import { PageTitle, Section, Techs } from "components/UI";
 import styles from "./Projects.module.scss";
 import { projects } from "./config";
 import { Project } from "./model";
+import { useCardsAnimate } from "@libs";
 
 const Projects = () => {
+  useCardsAnimate("#projects", undefined);
   return (
     <Section id="projects" className={styles.container}>
       <PageTitle title="Featured Projects" />
-      {projects.map((project) => (
-        <Project key={project.name} {...project} />
-      ))}
+      <div>
+        {projects.map((project) => (
+          <Project key={project.name} {...project} />
+        ))}
+      </div>
     </Section>
   );
 };

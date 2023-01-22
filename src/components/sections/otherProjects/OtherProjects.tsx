@@ -1,21 +1,23 @@
-import { ExternalLink, FolderIcon, GitHubIcon } from "@assets";
-import { Button, Section, Techs } from "components/UI";
 import { useState } from "react";
+import { Button, Section, Techs } from "@components";
+import { useCardsAnimate } from "@libs";
+import { ExternalLink, FolderIcon, GitHubIcon } from "@assets";
 import { projects } from "./config";
 
 import styles from "./OtherProjects.module.scss";
 
 const OtherProjects: React.FC = () => {
   const [list, setList] = useState(projects.slice(0, 6));
+  useCardsAnimate("#projects-cards", list);
   const onClickHandler = () => {
     const newList =
       list.length === 6 ? [...projects] : [...projects.slice(0, 6)];
     setList(newList);
   };
   return (
-    <Section className={styles.container}>
+    <Section className={styles.container} id="projects-cards">
       <h2 className={styles.title}>Other Projects</h2>
-      <div>
+      <div id="projects-cards">
         {list.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}
