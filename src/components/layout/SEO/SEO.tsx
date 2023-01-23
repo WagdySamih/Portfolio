@@ -32,9 +32,10 @@ const SEO = ({
       <meta itemProp="name" content={title} />
       <meta itemProp="description" content={description} />
       <meta name="keywords" content={keywords} />
+      <meta name="theme-color" content="#0a192f"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       {image && <meta itemProp="image" content={image} />}
-      <meta property="og:type" content="article" />
+      <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       {image && <meta property="og:image" content={image} />}
       <meta property="og:description" content={description} />
