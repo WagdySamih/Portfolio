@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import Head from "next/head";
 
 type SEOProps = {
@@ -18,12 +18,13 @@ const WEBSITE_IMAGE = "images/demo.jpeg";
 const WEBSITE_KEYWORDS =
   "Wagdy, Wagdy Samih, Wagdy Samih Software engineer, JavaScript Developer";
 
-const SEO = ({
+const SEO: React.FC<PropsWithChildren<SEOProps>> = ({
+  children,
   title = WEBSITE_NAME,
   description = WEBSITE_DESCRIPTION,
   keywords = WEBSITE_KEYWORDS,
   image = WEBSITE_IMAGE,
-}: SEOProps) => {
+}) => {
   return (
     <Head>
       <meta charSet="utf-8" />
@@ -32,7 +33,7 @@ const SEO = ({
       <meta itemProp="name" content={title} />
       <meta itemProp="description" content={description} />
       <meta name="keywords" content={keywords} />
-      <meta name="theme-color" content="#0a192f"/>
+      <meta name="theme-color" content="#0a192f" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       {image && <meta itemProp="image" content={image} />}
       <meta property="og:type" content="website" />
@@ -44,6 +45,7 @@ const SEO = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      {children}
     </Head>
   );
 };
