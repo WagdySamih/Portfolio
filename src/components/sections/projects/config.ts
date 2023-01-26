@@ -10,9 +10,9 @@ export const projects: Project[] = [
     responsibilities: [
       "Was responsible for starting the website implementation from scratch.",
       "Implemented social foodies' news feed with posts, comments, replies, likes and shares.",
-      "Integrated state management using NgRx",
-      "getting user addresses using google, map moving, and country city and areas APIs",
-      "Integrated Google and Facebook login",
+      "Integrated state management using NgRx.",
+      "getting user addresses using google, map moving, and country city and areas APIs.",
+      "Integrated Google and Facebook login.",
     ],
     techs: [
       "angular",
@@ -30,7 +30,7 @@ export const projects: Project[] = [
       "A medium like website, where users can follow up with latest tech articles, and interact with them.",
     ],
     responsibilities: [
-      "My role was to completely design and implement the front-end of the main website",
+      "My role was to completely design and implement the front-end of the main website.",
     ],
     techs: ["Next.js", "TypeScript", "Redux", "Redux Toolkit", "SSG", "SSR"],
     image: "",
@@ -42,9 +42,9 @@ export const projects: Project[] = [
       "A complete E-commerce API with PayPal payment method and all its basic features, authentication, products, carts, orders, reviews, and a user wish list.",
     ],
     responsibilities: [
-      "My role was to completely design and implement the front-end of the main website",
-      "Implemented user access rules: admin user and guest",
-      "Added pagination, filtering and sorting to all lists",
+      "My role was to implement the API from scratch completely.",
+      "Implemented user access rules: admin, user and guest.",
+      "Added pagination, filtering and sorting to all lists.",
       "Implemented order status tracking through email service.",
     ],
     techs: ["Node.js", "Paypal-rest-SDK", "Express", "Mongoose", "JWT"],

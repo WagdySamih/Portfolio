@@ -12,14 +12,21 @@ export const projects: Project[] = [
   {
     title: " Developing Camps API",
     description:
-      "API to manage boot camps, courses, users, and reviews. It includes authentication with JWT and cookies, password forgetting and resetting, sending emails and file uploads, pagination filtering, and sorting.",
+      "API to manage boot camps, courses, users, and reviews. It includes authentication with JWT and cookies, password forgetting and resetting, Role permissions, sending emails and file uploads, pagination filtering, and sorting.",
     techs: ["Node.js", "Express", "Mongoose", "Nodemailer"],
     githubLink: "https://github.com/WagdySamih/Developing-camps-API",
   },
   {
+    title: "Personal Portfolio",
+    description:
+      "This is my first trial for making a portfolio, Built with next.js for good SEO. I Added google analytics (Yes, I know you're here now 🌚), And used AWS Amplify hosting for deployment.",
+    techs: ["Next", "TS", "Google Analytics"],
+    githubLink: "https://github.com/WagdySamih/Portfolio",
+  },
+  {
     title: "Chess Application",
     description:
-      "A two players console CPP chess application supports saving and loading games through a text file system, also supports undo and redo for moves, view captured pieces for each player. This app supports each player moves validation, with check-mate validation and pawn promotion.",
+      "A two players console CPP chess application supports saving and loading games through a text file system. Also supports undoing and redoing moves, and viewing captured pieces for each player. This app supports each player's moves validation, with check-mate and pawn promotion validations.",
     techs: ["C++", "C", "JavaScript"],
     githubLink: "https://github.com/WagdySamih/Chess-App",
     deploymentLink: "",
@@ -27,7 +34,7 @@ export const projects: Project[] = [
   {
     title: "NextJS-Blog",
     description:
-      "This is a simple Blog application built with next.js, that includes prerendering and SSR along side with CSR, This project with made to demonstrate the features of next.js",
+      "This is a simple Blog application built with Next.js that includes prerendering and SSR alongside CSR, This project with made to demonstrate the features of Next.js.",
     techs: ["Next", "JS", "React-markdown"],
     githubLink: "https://github.com/WagdySamih/NextJS-Blog/",
     deploymentLink: "",
@@ -35,7 +42,7 @@ export const projects: Project[] = [
   {
     title: "Weather Website",
     description:
-      "It gets the longitude and latitude of a specific location using mapbox.com API, then fetch the weather from darkskey.net!",
+      "It gets the longitude and latitude of a specific location using mapbox.com API, then fetch the weather from darkskey.net",
     techs: ["Node", "Express", "JS"],
     githubLink: "https://github.com/WagdySamih/Chat-App/",
     deploymentLink: "",
@@ -43,18 +50,11 @@ export const projects: Project[] = [
   {
     title: "Hacker News | GraphQL",
     description:
-      "This is a simple project for hackers new to apply on graphQL concepts like queries, mutations and subscriptions, etc. while learning.",
+      "This is a simple project for hackers new to applying graphQL concepts while learning queries, mutations, subscriptions, etc.",
     techs: ["GraphQL", "Apollo Client", "React"],
     githubLink: "https://github.com/WagdySamih/Hacker-News-GraphQL",
   },
 
-  {
-    title: "Personal Portfolio",
-    description:
-      "This is my first trial for making a portfolio, built with next for good SEO, And I wanted to try next in a personal project anyways.",
-    techs: ["Next", "TS"],
-    githubLink: "https://github.com/WagdySamih/Portfolio",
-  },
   {
     title: "Project Manager, Drag & Drop",
     description:
@@ -66,7 +66,7 @@ export const projects: Project[] = [
   {
     title: "Financer",
     description:
-      "A static company portfolio website called Financer was built for learning purposes and for practicing the concept of creating UI/UX.",
+      "A static company portfolio website called Financer, was built for learning purposes and for practicing the responsive design and concept of creating UI/UX.",
     techs: ["HTML5", "CSS", "JS"],
     githubLink: "https://github.com/WagdySamih/Financer",
     deploymentLink: "https://wagdysamih.github.io/Financer/",
@@ -74,7 +74,7 @@ export const projects: Project[] = [
   {
     title: "newsCave",
     description:
-      "This is a simple static new website, was built for learning purposes.",
+      "A simple static new website was built for learning purposes & practice responsive design.",
     techs: ["HTML", "CSS"],
     githubLink: "https://github.com/WagdySamih/newsCave",
     deploymentLink: "https://wagdysamih.github.io/newsCave/",
