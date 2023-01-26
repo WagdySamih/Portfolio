@@ -18,8 +18,7 @@ const WEBSITE_IMAGE = "images/demo.jpeg";
 const WEBSITE_KEYWORDS =
   "Wagdy, Wagdy Samih, Wagdy Samih Software engineer, JavaScript Developer";
 
-const SEO: React.FC<PropsWithChildren<SEOProps>> = ({
-  children,
+const SEO: React.FC<SEOProps> = ({
   title = WEBSITE_NAME,
   description = WEBSITE_DESCRIPTION,
   keywords = WEBSITE_KEYWORDS,
@@ -28,7 +27,7 @@ const SEO: React.FC<PropsWithChildren<SEOProps>> = ({
   return (
     <Head>
       <meta charSet="utf-8" />
-      <title> {title}</title>
+      <title>{title}</title>
       <meta name="description" content={description} />
       <meta itemProp="name" content={title} />
       <meta itemProp="description" content={description} />
@@ -45,7 +44,6 @@ const SEO: React.FC<PropsWithChildren<SEOProps>> = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
-      {children}
     </Head>
   );
 };

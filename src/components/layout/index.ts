@@ -5,3 +5,4 @@ export * from "./email";
 export * from "./logo";
 export * from "./socialLinks";
 export * from "./mobileNav";
+export * from "./SEO";

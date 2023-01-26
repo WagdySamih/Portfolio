@@ -1,5 +1,5 @@
 import { PropsWithChildren } from "react";
-import { Email, Header, SocialLinks, Footer } from "..";
+import { Email, Header, SocialLinks, Footer, SEO } from "..";
 
 import styles from "./Layout.module.scss";
 
@@ -8,6 +8,7 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => {
     <>
       <div className={styles.layout}>
         <div className={styles.container}>
+          <SEO />
           <Header />
           <main> {children}</main>
           <Footer />
