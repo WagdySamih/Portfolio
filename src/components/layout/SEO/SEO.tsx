@@ -44,6 +44,10 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      <meta
+        name="google-site-verification"
+        content="Wk8A0i8o745pE3he5ZdekszJShm0GoS8pPBBDCWr0uI"
+      />
     </Head>
   );
 };

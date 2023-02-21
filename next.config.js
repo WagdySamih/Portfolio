@@ -7,7 +7,14 @@ const nextConfig = {
   },
   images: {
     unoptimized: true
-  }
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/sitemap.xml',
+        destination: '/sitemap.xml',
+      },
+    ]
+  },
 }
-
 module.exports = nextConfig
