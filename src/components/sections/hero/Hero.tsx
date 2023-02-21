@@ -8,11 +8,11 @@ const Hero: React.FC = () => {
     <Section className={styles.container}>
       <div className={styles.hi}>Hi, My name is</div>
       <h1 className={styles.name}>Wagdy Samih.</h1>
-      <div className={styles.intro}>I build things for the web.</div>
+      <div className={styles.intro}>I am a software developer.</div>
       <p className={styles.text}>
-        I am a software engineer, Working mostly with JavaScript frameworks
+        Working mostly with JavaScript frameworks
         <br />
-        I have more than two years of experience as a MEAN | MERN stack developer.
+        I have almost three years of experience as a MEAN | MERN stack developer.
         <br />& right now, I am working as a software developer at{" "}
         <a
           href="https://www.cultofcoders.com/"
