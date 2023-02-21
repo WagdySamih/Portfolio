@@ -12,6 +12,7 @@ const Footer: React.FC = () => {
             onClick={onGithubClick}
             href="https://github.com/WagdySamih"
             target={"_blank"}
+            aria-label="Github"
             rel="noreferrer"
           >
             <GitHubIcon/>
@@ -21,6 +22,7 @@ const Footer: React.FC = () => {
           <a
             onClick={onLinkedinClick}
             href="https://www.linkedin.com/in/wagdy-samih/"
+            aria-label="Linkedin"
             target={"_blank"}
             rel="noreferrer"
           >
@@ -31,6 +33,7 @@ const Footer: React.FC = () => {
           <a
             onClick={onFacebookClick}
             href="https://www.facebook.com/profile.php?id=100006375610497"
+            aria-label="Facebook"
             target={"_blank"}
             rel="noreferrer"
           >

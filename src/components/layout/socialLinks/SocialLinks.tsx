@@ -6,9 +6,9 @@ const SocialLinks: React.FC = () => {
   return (
     <div className={styles.container}>
       <ul>
-        {socialLinks.map(({ link, onClick, icon }) => (
+        {socialLinks.map(({ link, onClick, icon, ["aria-label"]: label }) => (
           <li key={link}>
-            <a href={link} target={"_blank"} rel="noreferrer">
+            <a href={link} target={"_blank"} aria-label={label} rel="noreferrer">
               {icon}
             </a>
           </li>
