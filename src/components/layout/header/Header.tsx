@@ -27,7 +27,12 @@ const Header: React.FC = () => {
         <Button
           className={styles.download}
           text={
-            <a onClick={onCVDownload} href="/Wagdy Samih CV.pdf" download>
+            <a
+              rel="preconnect"
+              onClick={onCVDownload}
+              href="/Wagdy Samih CV.pdf"
+              download
+            >
               Resume
             </a>
           }

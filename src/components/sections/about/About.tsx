@@ -29,7 +29,7 @@ const About: React.FC = () => {
           </ul>
         </div>
         <ProfileImage
-          imagePath="/images/me.jpg"
+          imagePath="/images/me.webp"
           alt="Wagdy Samih Profile Image"
         />
       </div>

@@ -8,6 +8,8 @@ const Email = () => {
         onClick={onEmailClick}
         className={styles.email}
         href="mailto:wagdysamih787@gmail.com"
+        aria-label="Email"
+        rel="preconnect"
       >
         wagdysamih787@gmail.com
       </a>
