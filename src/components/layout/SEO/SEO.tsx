@@ -33,6 +33,8 @@ const SEO: React.FC<SEOProps> = ({
       <meta itemProp="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="theme-color" content="#0a192f" />
+      <link rel="preconnect" href="https://www.google-analytics.com"></link>
+      <link rel=" dns-prefetch" href="https://www.google-analytics.com"></link>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       {image && <meta itemProp="image" content={image} />}
       <meta property="og:type" content="website" />
@@ -48,6 +50,8 @@ const SEO: React.FC<SEOProps> = ({
         name="google-site-verification"
         content="Wk8A0i8o745pE3he5ZdekszJShm0GoS8pPBBDCWr0uI"
       />
+
+     
     </Head>
   );
 };
