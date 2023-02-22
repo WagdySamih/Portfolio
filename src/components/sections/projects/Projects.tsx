@@ -28,7 +28,7 @@ const Project: React.FC<Project> = ({
 }) => {
   return (
     <div className={styles.projectContainer}>
-      <h3 className={styles.title}>{name}</h3>
+      <h2 className={styles.title}>{name}</h2>
       <ul className={styles.description}>
         {descriptionPoints.map((p) => (
           <li key={p}>{p}</li>
