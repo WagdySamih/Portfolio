@@ -5,15 +5,17 @@ export const projects: Project[] = [
     name: "Qurba Main website",
     url: "https://qurba.io/",
     descriptionPoints: [
-      "Website for social food ordering. Where users can see offers and meals and interact with them via likes, comments, shares, and ordering from restaurants.",
+      "Website for social food ordering where users can see offers and meals and interact with them via like comments, shares, and orders from restaurants.",
     ],
     responsibilities: [
-      "Was responsible for starting the website implementation from scratch.",
-      "Implemented social foodies' news feed with posts, comments, replies, likes and shares.",
+      "Took full ownership of website implementation from scratch.",
+      "Implemented social foodies' news feed with posts, comments, likes, and shares",
       "Integrated state management using NgRx.",
-      "getting user addresses using google, map moving, and country city and areas APIs.",
+      "Obtaining User Addresses with Google Maps API: Geolocation, Mapping, and Country/City/Area Data.",
+      "Implemented Google and Facebook login for seamless authentication.",
       "Integrated Google and Facebook login.",
     ],
+
     techs: [
       "angular",
       "angular universal",
@@ -30,7 +32,7 @@ export const projects: Project[] = [
       "A medium like website, where users can follow up with latest tech articles, and interact with them.",
     ],
     responsibilities: [
-      "My role was to completely design and implement the front-end of the main website.",
+      "I was responsible for creating and executing the front-end design of the primary website in its entirety.",
     ],
     techs: ["Next.js", "TypeScript", "Redux", "Redux Toolkit", "SSG", "SSR"],
     image: "",
@@ -45,7 +47,7 @@ export const projects: Project[] = [
       "My role was to implement the API from scratch completely.",
       "Implemented user access rules: admin, user and guest.",
       "Added pagination, filtering and sorting to all lists.",
-      "Implemented order status tracking through email service.",
+      "Integrated email messaging service to enable order status tracking.",
     ],
     techs: ["Node.js", "Paypal-rest-SDK", "Express", "Mongoose", "JWT"],
     image: "",

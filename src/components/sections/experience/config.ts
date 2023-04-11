@@ -11,8 +11,8 @@ export const workExperience: WorkExperience[] = [
       end: "current",
     },
     description: [
-      "Developed new features in TheSuperClub website.",
-      "Developed new features in TheSuperClub admin dashboard website.",
+      "Expanded functionality of The Super Club website and admin dashboard by developing new features for streamlined event management.",
+      "Leveraged technical expertise to enhance the project management capabilities of Agency Box website with the development of new features for small businesses.",
       "Front-end development using React, Next.Js, GraphQL, Apollo client.",
     ],
     techs: ["React", "Next.Js", "GraphQL", "Apollo client", "Antd"],
@@ -23,13 +23,10 @@ export const workExperience: WorkExperience[] = [
     location: "Cairo, Egypt",
     title: "Software engineer",
     description: [
-      "Developed and maintained code in the Srvy mobile application and added new features.",
-      "Maintained the admin dashboard",
-      "Integrated real-time call booking using graphQL and AppSync.",
-      "Was responsible for reviewing code and mentoring fresh developers.",
-      // "Front-end development using React, React native.",
-      // "Back-end developing using NodeJS, Express, Postgres.",
-      // "Integrated real-time calls booking using graphQL, AppSync.",
+      "Led development of new features and improvements for Srvy app, ensuring quality and timely delivery.",
+      "Implemented real-time call booking through AppSync and GraphQL integration.",
+      "Conducted code reviews and implemented best practices to maintain the quality of the Srvy app codebase.",
+      "Mainted backend with Node, Express & Postgres database",
     ],
 
     date: {
@@ -45,6 +42,7 @@ export const workExperience: WorkExperience[] = [
       "graphQL",
       "Apollo client",
       "AppSync",
+      "AWS",
     ],
   },
   {
@@ -53,15 +51,14 @@ export const workExperience: WorkExperience[] = [
     location: "Alexandria, Egypt",
     title: "Full stack developer",
     description: [
-      "Developed Qurba main website from scratch.",
-      "Was completely responsible for the restaurant managers website.",
+      "Developed Qurba’s main website from scratch.",
+      "Oversaw the restaurant manager’s website, handling all aspects of its functionality.",
+      "Implemented Elastic Search in restaurant managers' applications.",
       "Implemented Google analytics and Elastic Search.",
-      "Implemented logalytics using LogDNA in the whole front and back-end.",
-      "Dealt with AWS S3, code pipeline, code build and cloudwatch.",
-      // "Front-end developing using Angular framework.",
-      // "Back-end developing using NodeJS, MongoDB, Mongoose, Express.",
-      // "Version Control using Git and GitHub",
-      "Tasks management using Agile and Jira.",
+      "Implemented Logalytics using LogDNA for comprehensive front/ back-end logging",
+      "Managed AWS S3, CodePipeline, CodeBuild, and CloudWatch for efficient.deployment and monitoring",
+      "Monitored backend performance using NewRelic",
+      "Task management using Agile, and Jira",
     ],
     date: {
       start: "July - 2020",
@@ -69,6 +66,7 @@ export const workExperience: WorkExperience[] = [
     },
     techs: [
       "Angular",
+      "Ngrx",
       "NodeJS",
       "MongoDB",
       "Mongoose",
