@@ -14,7 +14,7 @@ const WEBSITE_NAME = "Wagdy Samih | Portfolio";
 const WEBSITE_DESCRIPTION =
   "Wagdy Samih is software engineer, Working mostly with JavaScript frameworks, Having +3 year of Experience as MEAN | MERN stack developer";
 
-const WEBSITE_IMAGE = "images/demo.webp";
+const WEBSITE_IMAGE = "images/demo.png";
 const WEBSITE_KEYWORDS =
   "Wagdy, Wagdy Samih, Wagdy Samih Software engineer, JavaScript Developer, Full Stack developer, MEARN Stack developer";
 
