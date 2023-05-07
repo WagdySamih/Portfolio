@@ -19,7 +19,6 @@ const SEO: React.FC = () => {
       <meta itemProp="description" content={WEBSITE_DESCRIPTION} />
       <meta name="keywords" content={WEBSITE_KEYWORDS} />
       <meta name="author" content={AUTHOR_NAME} />
-      <time dateTime="2023-01-14">Publish Date</time>
       <meta name="theme-color" content="#0a192f" />
       <link rel="preconnect" href="https://www.google-analytics.com"></link>
       <link rel=" dns-prefetch" href="https://www.google-analytics.com"></link>
