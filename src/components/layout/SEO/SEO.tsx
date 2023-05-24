@@ -21,7 +21,7 @@ const SEO: React.FC = () => {
       <meta name="author" content={AUTHOR_NAME} />
       <meta name="theme-color" content="#0a192f" />
       <link rel="preconnect" href="https://www.google-analytics.com"></link>
-      <link rel=" dns-prefetch" href="https://www.google-analytics.com"></link>
+      <link rel="dns-prefetch" href="https://www.google-analytics.com"></link>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta itemProp="image" content={WEBSITE_IMAGE} />
       <meta property="og:type" content="website" />
