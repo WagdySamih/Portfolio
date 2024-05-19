@@ -44,7 +44,12 @@ const MobileNav: React.FC<Props> = ({
           <Button
             className={styles.download}
             text={
-              <a onClick={onCVDownload} href="/Wagdy Samih CV.pdf" download>
+              <a
+                rel='preconnect'
+                onClick={onCVDownload}
+                href='/Wagdy Samih CV.pdf'
+                target='_blank'
+              >
                 Resume
               </a>
             }

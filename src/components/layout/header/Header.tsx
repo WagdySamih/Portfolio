@@ -28,10 +28,10 @@ const Header: React.FC = () => {
           className={styles.download}
           text={
             <a
-              rel="preconnect"
+              rel='preconnect'
               onClick={onCVDownload}
-              href="/Wagdy Samih CV.pdf"
-              download
+              href='/Wagdy Samih CV.pdf'
+              target='_blank'
             >
               Resume
             </a>
