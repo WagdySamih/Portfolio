@@ -13,11 +13,11 @@ const Hero: React.FC = () => {
         I have four years of experience as a MEAN | MERN stack developer.
         <br />& right now, I am working as a software developer at{" "}
         <a
-          href='https://crypto.oanda.com/uk-en/'
+          href='https://oanda.com'
           target={"_blank"}
           rel='noreferrer'
         >
-          Oanda Crypto (Coinpass)
+          Oanda (Coinpass)
         </a>
         .
       </p>
